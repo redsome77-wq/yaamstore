@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="베이커리/카페 사업자 전용 쇼핑몰 얌스토어입니다.">
     <meta name="keywords" content="사업자 전용, 베이커리, 카페, 업소용, 식빵, 케이크">
-    <link rel="shortcut icon" href="./img/logo_s1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon_yaam.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>얌스토어 : 베이커리/카페 사업자 전용 쇼핑몰 : Yaamstore</title>
     <link rel="stylesheet" href="./styles/reset.css">
@@ -19,12 +19,10 @@
         <header>
             <div class="h_top">
                 <h1><a href="./index.html"><img src="./img/logo.png" alt="얌스토어"></a></h1>
-                <div class="search_box">
-                    <form action="#" method="get">
-                            <input type="search" placeholder="고품질 버터, 한자리에" name="search" id="search" class="search">
-                            <button type="button"><img src="./img/search.svg" alt="검색하기"></button>
-                    </form>
-                </div>
+                <form action="#" method="get">
+                        <input type="search" placeholder="고품질 버터, 한자리에" name="search" id="search" class="search">
+                        <button type="button" class="s_icon"><img src="./img/search.svg" alt="검색하기"></button>
+                </form>
                 <div id="lnb">
                     <a href="#">마이페이지</a>
                     <a href="#">장바구니</a>
@@ -34,7 +32,7 @@
             </div>
             <div class="h_btm">
                 <div class="whloe_cate">
-                    <a href="#"><img src="./img/ham.png" alt=""><span>카테고리</span>></a>
+                    <a href="#"><img src="./img/ham.png" alt=""><span>카테고리</span></a>
                     <ul class="depth_01"> <!-- depth01, 02식 넘버링 -->
                         <li><a href="#">바로생지</a>
                             <ul class="depth_02"> 
@@ -169,53 +167,55 @@
                         <a href="#">게시판</a>
                     </div>
                 </nav>
-                <div class="header_guide">
+                <div class="h_guide">
                     <a href="#"><img src="./img/top_business_board.png" alt="사업자 전환신청"></a>
                     <a href="#"><img src="./img/top_delivery_info.png" alt="배송안내"></a>
                 </div>
             </div>
         </header>
         <main>
-            <div class="slide_wrap">
-                <div class="slide_img">
+            <div class="hero_bnr">
+                <div class="bnr_img">
                     <a href="#"><img src="./img/slide01.jpg" alt="2026 새해복많이받으세요"></a>
                     <a href="#"><img src="./img/slide02.jpg" alt="앵커버터 파격세일"></a>
                 </div>
-                <div class="slide_btn">
-                    <button type="button" class="prev_btn"><img src="./img/mainNEW_slide_left.png" alt="이전 광고보기"></button>
-                    <button type="button" class="next_btn"><img src="./img/mainNEW_slide_right.png" alt="다음 광고보기"></button>
-                </div>
-                <div class="slide_pagelist"> <!-- 버튼 반복 -->
-                    <button type="button" class="active"><img src="" alt="1번째 슬라이드 보기"></button>
-                    <button type="button"><img src="" alt="2번째 슬라이드 보기"></button>
-                    <button type="button"><img src="" alt="3번째 슬라이드 보기"></button>
-                    <button type="button"><img src="" alt="4번째 슬라이드 보기"></button>
+                <button type="button" class="prev_btn"><img src="./img/mainNEW_slide_left.png" alt="이전 광고보기"></button>
+                <button type="button" class="next_btn"><img src="./img/mainNEW_slide_right.png" alt="다음 광고보기"></button>
+                <div class="bnr_pagelist"> <!-- 버튼 반복 -->
+                    <button type="button" class="active"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
                 </div>
             </div>
-            <div class="sub_menu">
-                <a href="#">자주 산 상품</a>
-                <a href="#">사업자 전용 다다익선관</a>
-                <a href="#">출석체크</a>
+            <div class="category_menu">
+                <a href="#">자주 산 상품</a><span>|</span>
+                <a href="#">사업자 전용 다다익선관</a><span>|</span>
+                <a href="#">출석체크</a><span>|</span>
                 <a href="#">얌스토어 솔루션/컨설팅</a>
             </div>
             <div class="selling_product">
-                <a href="#"><img src="./img/main_con2_icon1.png" alt="">크로와상</a>
-                <a href="#"><img src="./img/main_con2_icon2.png" alt="">버터</a>
-                <a href="#"><img src="./img/main_con2_icon3.png" alt="">레시피</a>
-                <a href="#"><img src="./img/main_con2_icon4.png" alt="">카페 재료</a>
-                <a href="#"><img src="./img/main_con2_icon5.png" alt="">이달의 특가</a>
+                <a href="#" class="main_item"><img src="./img/main_con2_icon1.png" alt="">크로와상</a>
+                <a href="#" class="main_item"><img src="./img/main_con2_icon2.png" alt="">버터</a>
+                <a href="#" class="main_item"><img src="./img/main_con2_icon3.png" alt="">레시피</a>
+                <a href="#" class="main_item"><img src="./img/main_con2_icon4.png" alt="">카페 재료</a>
+                <a href="#" class="main_item"><img src="./img/main_con2_icon5.png" alt="">이달의 특가</a>
             </div>
-            <section id="best_product_wrap">
+            <section id="best_product">
                 <div class="title">
-                    <h1>베스트</h1>
-                    <a href="#"><img src="./img/view_more_btn.png" alt="더보기"></a>
+                    <div class="title_info">
+                        <h1>베스트</h1>
+                        <p>얌스토어에서 가장 인기있는 베스트 셀러</p>
+                    </div>
+                    <a href="#" class="more_btn"><img src="./img/view_more_btn.png" alt="더보기"></a>
                 </div>
-                <p>얌스토어에서 가장 인기있는 베스트 셀러</p>
                 <div class="contents">
                     <ul class="container"> <!-- 베스트 상품반복 -->
                         <li>
-                            <a href="#" class="product_img"><img src="./img/bbb.jpg" alt="버터크로와상 냉동생지"></a>
-                            <span>1봉</span>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb.jpg" alt="버터크로와상 냉동생지"></a>
+                                <span>1봉</span>
+                            </div>
                             <div class="product_info">
                                 <a href="#">
                                     <p><em>버터크로와상 냉동생지</em><br>(75gx20개)</p>
@@ -228,24 +228,24 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="slide_btn">
-                        <button type="button" class="prev_btn"><img src="./img/btn_horizontal_prev.png" alt="이전 상품보기"></button>
-                        <button type="button" class="next_btn"><img src="./img/btn_horizontal_next.png" alt="다음 상품보기"></button>
-                    </div>
+                    <button type="button" class="prev_btn"><img src="./img/btn_horizontal_prev.png" alt="이전 상품보기"></button>
+                    <button type="button" class="next_btn"><img src="./img/btn_horizontal_next.png" alt="다음 상품보기"></button>
                 </div>
             </section>
-            <section id="month_price"> 
-                <div class="title">
-                    <h1>이달의 특가</h1>
-                    <p>지금이 기회! 이달의 특가 제품을 만나보세요</p>
+            <section id="month_price">
+                <div class="m_txt">
+                    <div class="title_info">
+                        <h1>이달의 특가</h1>
+                        <p>지금이 기회! 이달의 특가 제품을 만나보세요</p>
+                    </div>
+                    <div class="count_clock">
+                        <img src="./img/timeSaleClock.png" alt="">
+                        <em class=clock>08일 22:36:54</em>
+                    </div>
                 </div>
-                <div class="count_clock">
-                    <img src="./img/timeSaleClock.png" alt="">
-                    <em class=clock>08일22:36:54</em>
-                </div>
-                <div class="month_product">
-                    <a href="#"><img src="./img/timesale.png" alt="벨지안 초콜릿 커버춰"></a>
-                    <a href="#">
+                <div class="m_product">
+                    <a href="#" class="m_p_img"><img src="./img/timesale.png" alt="벨지안 초콜릿 커버춰"></a>
+                    <a href="#" class="m_p_txt">
                         <h2>칼리바우트 2815<br>다크초콜릿 10kg 커버춰 57.9%<br>베이킹용 벌크 대용량</h2>
                         <p>진한 풍미의 벨지안 초콜릿 커버춰</p>
                         <div class="dis_price">
@@ -256,12 +256,76 @@
                     </a>
                 </div>
             </section>
+            <section id="new_product">
+                <div class="title">
+                    <div class="title_info">
+                        <h1>신상품</h1>
+                        <p>사장님을 위한 트렌드 메뉴 추천</p>
+                    </div>
+                    <a href="#" class="more_btn"><img src="./img/view_more_btn.png" alt="더보기"></a>
+                </div>
+                <div class="contents">
+                    <ul class="container"> <!-- 신상품반복 -->
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="" alt="클래식 버터롤"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>클래식 버터롤</em><br>2,184g(26gx21개x4봉)</p>
+                                    <span>버터향과 고소함이 조화를 이루는 클래식한 버터롤</span>
+                                </a>
+                                <div class="price">
+                                    <del>18,500원</del>
+                                    <em>14,800원</em>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="prev_btn"><img src="./img/btn_horizontal_prev.png" alt="이전 상품보기"></button>
+                    <button type="button" class="next_btn"><img src="./img/btn_horizontal_next.png" alt="다음 상품보기"></button>
+                </div>
+            </section>
+            <section id="sale_product">
+                <div class="title">
+                    <div class="title_info">
+                        <h1>할인제품</h1>
+                        <p>사장님 원가절감을 위한 얌 솔루션</p>
+                    </div>
+                    <a href="#" class="more_btn"><img src="./img/view_more_btn.png" alt="더보기"></a>
+                </div>
+                <div class="contents">
+                    <ul class="container"> <!-- 할인제품반복 -->
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="" alt="앵커버터"></a>
+                                <span>1개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>앵커 버터 454g</em><br>(454gx1개)</p>
+                                    <span>진하고 고급스러운 향과 풍미 가득</span>
+                                </a>
+                                <div class="price">
+                                    <del>10,500원</del>
+                                    <em>7,900원</em>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="prev_btn"><img src="./img/btn_horizontal_prev.png" alt="이전 상품보기"></button>
+                    <button type="button" class="next_btn"><img src="./img/btn_horizontal_next.png" alt="다음 상품보기"></button>
+                </div>
+            </section>
             <section id="event">
                 <div class="title">
-                    <h1>진행 이벤트</h1>
-                    <a href="#"><img src="./img/view_more_btn.png" alt="더보기"></a>
+                    <div class="title_info">
+                        <h1>진행 이벤트</h1>
+                        <p>놓치면 아쉬운, 지금만 누릴 수 있는 얌스토어의 특별한 혜택</p>
+                    </div>
+                    <a href="#" class="more_btn"><img src="./img/view_more_btn.png" alt="더보기"></a>
                 </div>
-                <p>놓치면 아쉬운, 지금만 누릴 수 있는 얌스토어의 특별한 혜택</p>
                 <ul id="event_list">
                     <!-- 이벤트 상품 반복 -->
                     <li>
@@ -271,7 +335,7 @@
                                 <dl>
                                     <dt>[펄솔트증정] 소금빵성형생지 5봉(83gx15개x5봉)</dt>
                                     <dd>
-                                        <p>버터의 깊은 고소함이 살아 있는 소금빵 성형생지</p>
+                                        버터의 깊은 고소함이 살아 있는 소금빵 성형생지<br>
                                         <em>90,300원</em>
                                     </dd>
                                 </dl>
@@ -280,25 +344,33 @@
                     </li>
                 </ul>
             </section>
+            <a href="#" class="members"><img src="" alt="얌스토어 멤버스 혜택"></a>
             <section id="recipe">
                 <div class="title">
-                    <h1>레시피</h1>
+                    <div class="title_info">
+                        <h1>레시피</h1>
+                        <p>고민하지 마세요. 따라만 해도 성공하는 레시피</p>
+                    </div>
                     <a href="#"><img src="./img/view_more_btn.png" alt="더보기"></a>
                 </div>
-                <p>고민하지 마세요. 따라만 해도 성공하는 레시피</p>
                 <div class="recipe_list"> <!-- 레시피 항목 반복 -->
-                    <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
-                    <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
-                    <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
-                    <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
-                    <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
-                    <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
-                    <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                    <div class="v_list">
+                        <a href="#" class=""><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                    </div>
+                    <div class="hide_list">
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                        <a href="#"><img src="./img/spcainmage_ccsg.png" alt="쿠키 소금빵 레시피"></a>
+                    </div>
                 </div>
-                <div class="slide_btn">
-                    <button type="button" class="prev_btn"><img src="./img/btn_horizontal_prev.png" alt="이전 레시피보기"></button>
-                    <button type="button" class="next_btn"><img src="./img/btn_horizontal_next.png" alt="다음 레시피보기"></button>
-                </div>
+                <button type="button" class="prev_btn"><img src="./img/btn_horizontal_prev.png" alt="이전 레시피보기"></button>
+                <button type="button" class="next_btn"><img src="./img/btn_horizontal_next.png" alt="다음 레시피보기"></button>
             </section>
         </main>
         <footer>
@@ -310,31 +382,33 @@
                 <li><a href="#"><img src="./img/f_insta.jpg" alt="인스타그램 링크"></a></li>
             </ul>
             <section id="gray_zone">
-                <div class="info">
-                    <a href="#">회사소개</a>
-                    <a href="#">이용약관</a>
-                    <a href="#">개인정보처리방침</a>
-                    <a href="#">멤버쉽혜택</a>
+                <div class="f_txt">
+                    <div class="info">
+                        <a href="#">회사소개</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">멤버쉽혜택</a>
+                    </div>
+                    <a href="./index.html"><img src="./img/f_wh_yaam.png" alt="얌스토어"></a>
+                    <address>
+                        상호 :주식회사 에스피씨삼립 | 대표 :김범수 | EMAIL :yaam@spc.co.kr<br>
+    사업자등록번호 :133-81-22244 [사업자번호조회 ] | 대표번호 :1670-0490<br>
+    주소 :경기도 시흥시 공단1대로 101 주식회사 에스피씨 삼립<br>
+    통신판매업신고번호 :제2002-경기시흥-43호 | 개인정보관리자 :이호성<br>
+    호스팅제공 : 엔에이치엔커머스(주)<br>copyright (c) www.yaamstore.com all rights reserved.
+                    </address>
                 </div>
-                <a href="./index.html"><img src="./img/f_wh_yaam.png" alt="얌스토어"></a>
-                <address>
-                    상호 :주식회사 에스피씨삼립 | 대표 :김범수 | EMAIL :yaam@spc.co.kr<br>
-사업자등록번호 :133-81-22244 [사업자번호조회 ] | 대표번호 :1670-0490<br>
-주소 :경기도 시흥시 공단1대로 101 주식회사 에스피씨 삼립<br>
-통신판매업신고번호 :제2002-경기시흥-43호 | 개인정보관리자 :이호성<br>
-호스팅제공 : 엔에이치엔커머스(주)<br>copyright (c) www.yaamstore.com all rights reserved.
-                </address>
-                <dl class="footer_guide_01">
+                <dl class="f_guide_01">
                     <dt><a href="#"><img src="./img/f_icon_deliv.png" alt=""><em>배송안내</em></a></dt>
-                    <dd><p>얌스토어 배송정책</p></dd>
+                    <dd>얌스토어 배송정책</dd>
                     <dt><a href="#"><img src="./img/f_icon_consult.png" alt=""><em>창업 컨설팅 제안</em></a></dt>
-                    <dd><p>A to Z 통합 솔루션 지원</p></dd>
+                    <dd>A to Z 통합 솔루션 지원</dd>
                 </dl>
-                <dl class="footer_guide_02">
+                <dl class="f_guide_02">
                     <dt><a href="#"><img src="./img/f_icon_go.png" alt=""><em>고객센터</em>1670-0490</a></dt>
-                    <dd><p>평일 9AM - 5PM(점심시간 12-1PM)<br>휴무 주말 및 공휴일</p></dd>
+                    <dd>평일 9AM - 5PM(점심시간 12-1PM)<br>휴무 주말 및 공휴일</dd>
                     <dt><a href="#"><img src="./img/f_icon_sa.png" alt=""><em>사업자 전환 신청</em></a></dt>
-                    <dd><p>only 사업자 혜택</p></dd>
+                    <dd>only 사업자 혜택</dd>
                 </dl>
             </section>
         </footer>
