@@ -19,9 +19,9 @@
         <header>
             <div class="h_top">
                 <h1><a href="./index.html"><img src="./img/logo.png" alt="얌스토어"></a></h1>
-                <form action="#" method="get">
+                <form action="#" method="get" id="searching_box">
                     <input type="search" placeholder="고품질 버터, 한자리에" name="search" id="search" class="search">
-                    <button type="button" class="s_icon"><img src="./img/search.svg" alt="검색하기"></button>
+                    <button type="button" id="search_icon"><img src="./img/search.svg" alt="검색하기"></button>
                 </form>
                 <div id="lnb">
                     <a href="#">마이페이지</a>
@@ -31,132 +31,134 @@
                 </div>
             </div>
             <div class="h_btm">
-                <div class="whloe_cate">
+                <div class="whole_cate">
                     <a href="#"><img src="./img/ham.png" alt=""><span>카테고리</span></a>
-                    <ul class="depth_01"> <!-- depth01, 02식 넘버링 -->
-                        <li><a href="#">바로생지</a>
-                            <ul class="depth_02"> 
-                                <li><a href="#">크로와상/소금빵</a></li>
-                                <li><a href="#">패스츄리</a></li>
-                                <li><a href="#">바게뜨/유러피안브레드</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">냉동생지</a>
-                            <ul class="depth_02">
-                                <li><a href="#">크로와상/소금빵</a></li>
-                                <li><a href="#">패스트리/파이</a></li>
-                                <li><a href="#">식빵도우(볼)</a></li>
-                                <li><a href="#">과자빵/피자도우</a></li>
-                                <li><a href="#">도넛/츄러스</a></li>
-                                <li><a href="#">스콘/쿠키</a></li>
-                                <li><a href="#">파베이크</a></li>
-                                <li><a href="#">도포물</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">냉동완제품</a>
-                            <ul class="depth_02">
-                                <li><a href="#">식빵/햄버거번/모닝빵</a></li>
-                                <li><a href="#">베이글/치아바타</a></li>
-                                <li><a href="#">또띠아/크레이프</a></li>
-                                <li><a href="#">와플/호빵</a></li>
-                                <li><a href="#">마카롱/머핀/마들렌/디저트</a></li>
-                                <li><a href="#">바게뜨/유러피안브레드</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">냉동케이크</a>
-                            <ul class="depth_02">
-                                <li><a href="#">홀케이크</a></li>
-                                <li><a href="#">조각케이크/롤케이크</a></li>
-                                <li><a href="#">케익시트</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">상온완제품</a>
-                            <ul class="depth_02">
-                                <li><a href="#">식빵/햄버거번/버터롤</a></li>
-                                <li><a href="#">떡</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">상온디저트</a>
-                            <ul class="depth_02">
-                                <li><a href="#">과자류</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">유제품</a>
-                            <ul class="depth_02">
-                                <li><a href="#">버터</a></li>
-                                <li><a href="#">마가린</a></li>
-                                <li><a href="#">생크림/휘핑크림/크림</a></li>
-                                <li><a href="#">치즈</a></li>
-                                <li><a href="#">크림치즈</a></li>
-                                <li><a href="#">연유/분유/우유</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">초콜릿</a>
-                            <ul class="depth_02">
-                                <li><a href="#">커버춰</a></li>
-                                <li><a href="#">컴파운드/코팅</a></li>
-                                <li><a href="#">초코칩/토핑</a></li>
-                                <li><a href="#">코코아분말/가공품</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">푸드</a>
-                            <ul class="depth_02">
-                                <li><a href="#">소스/조리베이스</a></li>
-                                <li><a href="#">토핑/부재료</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">음료베이스</a>
-                            <ul class="depth_02">
-                                <li><a href="#">스무디/에이드</a></li>
-                                <li><a href="#">시럽</a></li>
-                                <li><a href="#">파우더</a></li>
-                                <li><a href="#">커피</a></li>
-                                <li><a href="#">티</a></li>
-                                <li><a href="#">탄산수</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">베이킹재료</a>
-                            <ul class="depth_02">
-                                <li><a href="#">견과류</a></li>
-                                <li><a href="#">냉동과일/건과일</a></li>
-                                <li><a href="#">앙금/통조림</a></li>
-                                <li><a href="#">잼/퓨레/시럽</a></li>
-                                <li><a href="#">토핑물</a></li>
-                                <li><a href="#">밀가루/빵가루</a></li>
-                                <li><a href="#">소스/샐러드소스</a></li>
-                                <li><a href="#">소시지/베이컨</a></li>
-                                <li><a href="#">베이킹원료</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">소도구/포장재</a>
-                            <ul class="depth_02">
-                                <li><a href="#">베이킹도구</a></li>
-                                <li><a href="#">카페용품</a></li>
-                                <li><a href="#">포장봉투</a></li>
-                                <li><a href="#">유산지/베이킹컵</a></li>
-                                <li><a href="#">트레이/케이스</a></li>
-                                <li><a href="#">케이크소모품</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">웰니스</a>
-                            <ul class="depth_02">
-                                <li><a href="#">식빵</a></li>
-                                <li><a href="#">조각케이크/롤케이크</a></li>
-                                <li><a href="#">빵/도넛</a></li>
-                                <li><a href="#">과자</a></li>
-                                <li><a href="#">잼/땅콩버터/스프레드</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">기타</a>
-                            <ul class="depth_02">
-                                <li><a href="#">이런상품 어떠세요</a></li>
-                                <li><a href="#">오직얌에서만</a></li>
-                                <li><a href="#">다다익선</a></li>
-                                <li><a href="#">샘플KIT</a></li>
-                                <li><a href="#">명절선물세트</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class="w_cate_page">
+                        <ul class="depth_01"> <!-- depth01, 02식 넘버링 -->
+                            <li><a href="#">바로생지</a>
+                                <ul class="depth_02"> 
+                                    <li><a href="#">크로와상/소금빵</a></li>
+                                    <li><a href="#">패스츄리</a></li>
+                                    <li><a href="#">바게뜨/유러피안브레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">냉동생지</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">크로와상/소금빵</a></li>
+                                    <li><a href="#">패스트리/파이</a></li>
+                                    <li><a href="#">식빵도우(볼)</a></li>
+                                    <li><a href="#">과자빵/피자도우</a></li>
+                                    <li><a href="#">도넛/츄러스</a></li>
+                                    <li><a href="#">스콘/쿠키</a></li>
+                                    <li><a href="#">파베이크</a></li>
+                                    <li><a href="#">도포물</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">냉동완제품</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">식빵/햄버거번/모닝빵</a></li>
+                                    <li><a href="#">베이글/치아바타</a></li>
+                                    <li><a href="#">또띠아/크레이프</a></li>
+                                    <li><a href="#">와플/호빵</a></li>
+                                    <li><a href="#">마카롱/머핀/마들렌/디저트</a></li>
+                                    <li><a href="#">바게뜨/유러피안브레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">냉동케이크</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">홀케이크</a></li>
+                                    <li><a href="#">조각케이크/롤케이크</a></li>
+                                    <li><a href="#">케익시트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">상온완제품</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">식빵/햄버거번/버터롤</a></li>
+                                    <li><a href="#">떡</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">상온디저트</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">과자류</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">유제품</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">버터</a></li>
+                                    <li><a href="#">마가린</a></li>
+                                    <li><a href="#">생크림/휘핑크림/크림</a></li>
+                                    <li><a href="#">치즈</a></li>
+                                    <li><a href="#">크림치즈</a></li>
+                                    <li><a href="#">연유/분유/우유</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">초콜릿</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">커버춰</a></li>
+                                    <li><a href="#">컴파운드/코팅</a></li>
+                                    <li><a href="#">초코칩/토핑</a></li>
+                                    <li><a href="#">코코아분말/가공품</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">푸드</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">소스/조리베이스</a></li>
+                                    <li><a href="#">토핑/부재료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">음료베이스</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">스무디/에이드</a></li>
+                                    <li><a href="#">시럽</a></li>
+                                    <li><a href="#">파우더</a></li>
+                                    <li><a href="#">커피</a></li>
+                                    <li><a href="#">티</a></li>
+                                    <li><a href="#">탄산수</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">베이킹재료</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">견과류</a></li>
+                                    <li><a href="#">냉동과일/건과일</a></li>
+                                    <li><a href="#">앙금/통조림</a></li>
+                                    <li><a href="#">잼/퓨레/시럽</a></li>
+                                    <li><a href="#">토핑물</a></li>
+                                    <li><a href="#">밀가루/빵가루</a></li>
+                                    <li><a href="#">소스/샐러드소스</a></li>
+                                    <li><a href="#">소시지/베이컨</a></li>
+                                    <li><a href="#">베이킹원료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">소도구/포장재</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">베이킹도구</a></li>
+                                    <li><a href="#">카페용품</a></li>
+                                    <li><a href="#">포장봉투</a></li>
+                                    <li><a href="#">유산지/베이킹컵</a></li>
+                                    <li><a href="#">트레이/케이스</a></li>
+                                    <li><a href="#">케이크소모품</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">웰니스</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">식빵</a></li>
+                                    <li><a href="#">조각케이크/롤케이크</a></li>
+                                    <li><a href="#">빵/도넛</a></li>
+                                    <li><a href="#">과자</a></li>
+                                    <li><a href="#">잼/땅콩버터/스프레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">기타</a>
+                                <ul class="depth_02">
+                                    <li><a href="#">이런상품 어떠세요</a></li>
+                                    <li><a href="#">오직얌에서만</a></li>
+                                    <li><a href="#">다다익선</a></li>
+                                    <li><a href="#">샘플KIT</a></li>
+                                    <li><a href="#">명절선물세트</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <nav>
                     <div id="gnb">
@@ -168,8 +170,8 @@
                     </div>
                 </nav>
                 <div class="h_guide">
-                    <a href="#"><img src="./img/top_business_board.png" alt="사업자 전환신청"></a>
-                    <a href="#"><img src="./img/top_delivery_info.png" alt="배송안내"></a>
+                    <a href="#" class="seller_page"><img src="./img/top_business_board.png" alt="사업자 전환신청"></a>
+                    <a href="#" class="delivery_guide"><img src="./img/top_delivery_info.png" alt="배송안내"></a>
                 </div>
             </div>
         </header>
@@ -178,20 +180,30 @@
                 <div class="bnr_img">
                     <a href="#"><img src="./img/slide01.jpg" alt="2026 새해복많이받으세요"></a>
                     <a href="#"><img src="./img/slide02.jpg" alt="앵커버터 파격세일"></a>
+                    <a href="#"><img src="./img/slide03.png" alt="명절 연휴 할인"></a>
+                    <a href="#"><img src="./img/slide04.jpg" alt="소금빵생지 구매이벤트"></a>
+                    <a href="#"><img src="./img/slide05.jpg" alt="2월 스토어 큐레이션"></a>
+                    <a href="#"><img src="./img/slide06.jpg" alt="발렌타인 초콜릿 기획전"></a>
+                    <a href="#"><img src="./img/slide07.jpg" alt="애쉬레버터 파격이벤트"></a>
+                    <a href="#"><img src="./img/slide08.jpg" alt="추천인 이벤트"></a>
                 </div>
-                <button type="button" class="prev_btn"><img src="./img/mainNEW_slide_left.png" alt="이전 광고보기"></button>
-                <button type="button" class="next_btn"><img src="./img/mainNEW_slide_right.png" alt="다음 광고보기"></button>
+                <a href="#" class="prev"><img src="./img/mainNEW_slide_left.png" alt="이전 광고보기"></a>
+                <a href="#" class="next"><img src="./img/mainNEW_slide_right.png" alt="다음 광고보기"></a>
                 <div class="bnr_pagelist"> <!-- 버튼 반복 -->
-                    <button type="button" class="active"></button>
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    <button type="button"></button>
+                    <a href="#" class="active"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
                 </div>
             </div>
             <div class="category_menu">
-                <a href="#">자주 산 상품</a><span>|</span>
-                <a href="#">사업자 전용 다다익선관</a><span>|</span>
-                <a href="#">출석체크</a><span>|</span>
+                <a href="#">자주 산 상품</a>
+                <a href="#">사업자 전용 다다익선관</a>
+                <a href="#">출석체크</a>
                 <a href="#">얌스토어 솔루션/컨설팅</a>
             </div>
             <div class="selling_product">
@@ -213,7 +225,7 @@
                     <ul class="container"> <!-- 베스트 상품반복 -->
                         <li>
                             <div class="product_head">
-                                <a href="#" class="p_img"><img src="./img/bbb.jpg" alt="버터크로와상 냉동생지"></a>
+                                <a href="#" class="p_img"><img src="./img/bbb01.jpg" alt="버터크로와상 냉동생지"></a>
                                 <span>1봉</span>
                             </div>
                             <div class="product_info">
@@ -224,6 +236,150 @@
                                 <div class="price">
                                     <del>19,800원</del>
                                     <em>16,600원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb02.jpg" alt="뉴 뉴욕샌드위치식빵"></a>
+                                <span class="pp_point">최저가</span>
+                                <span>4봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>New뉴욕샌드위치식빵</em><br>(990gx4봉)</p>
+                                    <span>샌드위치용으로 적합한 대식빵</span>
+                                </a>
+                                <div class="price">
+                                    <del>16,000원</del>
+                                    <em>13,200원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb03.jpg" alt="애쉬레 aop버터"></a>
+                                <span class="pp_point">증정 5+1</span>
+                                <span>5개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>[경품제공] 에쉬레 AOP 버터</em><br>(2kgx5개+1개)</p>
+                                    <span>발효버터로 헤이즐넛 향의 프랑스산 AOP인증 판버터</span>
+                                </a>
+                                <div class="price">
+                                    <del>288,000원</del>
+                                    <em>237,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb04.jpg" alt="피스타치오케이크"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>피스타치오케이크 120g*5개</em><br>(120gx5입, 조각)</p>
+                                    <span>피스타치오 페이스트와 딸기 리플잼이 어우러진 케이크</span>
+                                </a>
+                                <div class="price">
+                                    <del>26,500원</del>
+                                    <em>19,800원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb05.jpg" alt="New블루베리베이글"></a>
+                                <span>2봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>New블루베리베이글</em><br>(110gx5입x2봉)</p>
+                                    <span>블루베리의 상큼함을 더한 베이글</span>
+                                </a>
+                                <div class="price">
+                                    <em>16,500원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb06.png" alt="선인 다크 컴파운드 초코칩"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>선인 다크 컴파운드 초코칩 1kg</em><br>(1kgx1봉)</p>
+                                    <span>진한 다크초콜릿의 맛 그대로</span>
+                                </a>
+                                <div class="price">
+                                    <del>10,000원</del>
+                                    <em>8,900원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb07.png" alt="칼리바우트 823 밀크 초콜릿"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>칼리바우트 823 밀크 초콜릿 10kg 벌크</em><br>(10kgx1봉)</p>
+                                    <span>균형잡힌 맛의 부드러운 커버춰</span>
+                                </a>
+                                <div class="price">
+                                    <del>360,000원</del>
+                                    <em>310,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb08.jpg" alt="앵커 버터 454g"></a>
+                                <span>1개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>앵커 버터 454g</em><br>(454gx1개)</p>
+                                    <span>진하고 고급스러운 향과 풍미 가득</span>
+                                </a>
+                                <div class="price">
+                                    <del>10,500원</del>
+                                    <em>7,900원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb09.jpg" alt="앵커 버터 454g 1박스"></a>
+                                <span>1박스</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>앵커 버터 454g 1박스(20개)</em><br>(454gx20개)</p>
+                                    <span>진하고 고급스러운 향과 풍미 가득</span>
+                                </a>
+                                <div class="price">
+                                    <del>210,000원</del>
+                                    <em>149,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/bbb10.jpg" alt="크림치즈호두빵"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>크림치즈호두빵</em><br>(190gx10개)</p>
+                                    <span>크림치즈의 풍미와 호두의 고소함 가득</span>
+                                </a>
+                                <div class="price">
+                                    <em>25,800원</em>
                                 </div>
                             </div>
                         </li>
@@ -268,8 +424,8 @@
                     <ul class="container"> <!-- 신상품반복 -->
                         <li>
                             <div class="product_head">
-                                <a href="#" class="p_img"><img src="" alt="클래식 버터롤"></a>
-                                <span>1봉</span>
+                                <a href="#" class="p_img"><img src="./img/new_p001.png" alt="클래식 버터롤"></a>
+                                <span>4봉</span>
                             </div>
                             <div class="product_info">
                                 <a href="#">
@@ -279,6 +435,152 @@
                                 <div class="price">
                                     <del>18,500원</del>
                                     <em>14,800원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p002.jpg" alt="얼그레이롤"></a>
+                                <span>6봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>얼그레이롤</em><br>(400gx6롤)</p>
+                                    <span>국내산 1A원유가 들어가 부드럽고 촉촉한 얼그레이롤</span>
+                                </a>
+                                <div class="price">
+                                    <em>43,500원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p003.jpg" alt="초코롤"></a>
+                                <span>6봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>초코롤</em><br>(400gx6롤)</p>
+                                    <span>국내산 1A원유가 들어가 부드럽고 촉촉한 초코롤</span>
+                                </a>
+                                <div class="price">
+                                    <del>43,500원</del>
+                                    <em>32,600원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p004.jpg" alt="프렌치모닝롤"></a>
+                                <span>4봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>프렌치모닝롤</em><br>(40gx12개x4봉)</p>
+                                    <span>오븐조리만으로도 갓구운빵 연출 가능</span>
+                                </a>
+                                <div class="price">
+                                    <em>29,700원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p005.png" alt="크래프트 그레이티드 파마산치즈"></a>
+                                <span class="pp_point">신제품</span>
+                                <span>24개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>크래프트 그레이티드 파마산치즈</em><br>(227gx24개)</p>
+                                    <span>잘 숙성된 치즈의 깊은 향이 매력적인 파마산치즈</span>
+                                </a>
+                                <div class="price">
+                                    <em>253,500원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p006.png" alt="A1 에이원 스테이크소스"></a>
+                                <span class="pp_point">신제품</span>
+                                <span>12개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>A1 에이원 스테이크소스 (283gx12개)</em><br>(283gx12개)</p>
+                                    <span>별도 조리없이 바로 사용 가능한 정통 스테이크 소스</span>
+                                </a>
+                                <div class="price">
+                                    <em>58,400원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p007.png" alt="우동소스"></a>
+                                <span class="pp_point">신제품</span>
+                                <span>6개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>우동소스</em><br>(1.8Lx6개)</p>
+                                    <span>국물 맛의 깊이가 다른 풍미 진한 전통 우동소스</span>
+                                </a>
+                                <div class="price">
+                                    <em>52,500원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p008.png" alt="우동용액상스프"></a>
+                                <span class="pp_point">신제품</span>
+                                <span>6개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>우동용액상스프</em><br>(1.8Lx6개)</p>
+                                    <span>간편 희석으로 완성되는 깊은 국물의 우동용 액상스프</span>
+                                </a>
+                                <div class="price">
+                                    <em>42,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/new_p009.png" alt="양념치킨소스"></a>
+                                <span class="pp_point">신제품</span>
+                                <span>6개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>양념치킨소스</em><br>(2100gx6개)</p>
+                                    <span>토마토의 상큼함에 매콤달콤한 밸런스가 어우러진 소스</span>
+                                </a>
+                                <div class="price">
+                                    <em>51,900원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img">
+                                    <img src="./img/new_p010.png" alt="칼리바우트 다크초콜릿">
+                                    <span><img src="./img/new_p_time.png" alt="타임세일"></span>
+                                </a>
+                                <span class="pp_point">이달의특가</span>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>칼리바우트 2815<br>다크초콜릿 10kg 커버춰 57.9%<br>베이킹용 벌크 대용량</em><br>신규회원 2만원 추가 할인 (10hgX1봉)</p>
+                                    <span>진한 풍미의 벨지안 초콜릿 커버춰</span>
+                                </a>
+                                <div class="price">
+                                    <del>384,058원</del>
+                                    <em>265,000원<img src="./img/new_p_time_s.png" alt="남은시간">13시간 남음</em>
                                 </div>
                             </div>
                         </li>
@@ -299,7 +601,7 @@
                     <ul class="container"> <!-- 할인제품반복 -->
                         <li>
                             <div class="product_head">
-                                <a href="#" class="p_img"><img src="" alt="앵커버터"></a>
+                                <a href="#" class="p_img"><img src="./img/sale_p01.jpg" alt="앵커버터"></a>
                                 <span>1개</span>
                             </div>
                             <div class="product_info">
@@ -310,6 +612,151 @@
                                 <div class="price">
                                     <del>10,500원</del>
                                     <em>7,900원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p02.jpg" alt="앵커버터 1박스"></a>
+                                <span>1박스</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>앵커 버터 454g 1박스(20개)</em><br>(454gx20개)</p>
+                                    <span>진하고 고급스러운 향과 풍미 가득</span>
+                                </a>
+                                <div class="price">
+                                    <del>210,000원</del>
+                                    <em>149,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p03.png" alt="페이장브레통 무염버터"></a>
+                                <span class="pp_point">최저가</span>
+                                <span>20개</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>페이장브레통 물레 무염버터</em><br>(500gx20개) [2026-05-07까지]</p>
+                                    <span>전통 주형 물레 방식으로 만든 부드러운 프랑스 버터</span>
+                                </a>
+                                <div class="price">
+                                    <del>266,200원</del>
+                                    <em>221,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p04.png" alt="칼리바우트 초콜릿"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>칼리바우트 2815<br>다크초콜릿 10kg 커버춰 57.9%<br>베이킹용 벌크 대용량</em><br>신규회원 2만원 추가 할인 (10kgX1봉)</p>
+                                    <span>진한 풍미의 벨지안 초콜릿 커버춰</span>
+                                </a>
+                                <div class="price">
+                                    <del>384,058원</del>
+                                    <em>265,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p05.png" alt="발로나 밀크초콜릿"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>발로나 지바바라떼 40% 밀크초콜릿 3kg</em><br>(3kgX1봉)</p>
+                                    <span>균형잡힌 맛의 부드러운 커버춰</span>
+                                </a>
+                                <div class="price">
+                                    <del>175,000원</del>
+                                    <em>155,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p06.png" alt="발로나 다크초콜릿"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>발로나 과나하 70% 다크초콜릿 3kg</em><br>(3kgX1봉)</p>
+                                    <span>카카오의 쌉쌀함과 깊고 풍부한 풍미</span>
+                                </a>
+                                <div class="price">
+                                    <del>175,000원</del>
+                                    <em>155,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p07.png" alt="선인 다크 컴파운드 초코칩"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>선인 다크 컴파운드 초코칩 1kg</em><br>(1kgX1봉)</p>
+                                    <span>진한 다크초콜릿의 맛 그대로</span>
+                                </a>
+                                <div class="price">
+                                    <del>10,000원</del>
+                                    <em>8,900원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p08.png" alt="칼리바우트 밀크 초콜릿"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>칼리바우트 823 밀크 초콜릿 2.5kg</em><br>(2.5kgX1봉)</p>
+                                    <span>균형잡힌 맛의 부드러운 커버춰</span>
+                                </a>
+                                <div class="price">
+                                    <del>95,000원</del>
+                                    <em>85,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p09.png" alt="칼리바우트 다크 초콜릿"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>칼리바우트 2815 다크 초콜릿 2.5kg</em><br>(2.5kgX1봉)</p>
+                                    <span>균형잡힌 맛의 부드러운 커버춰</span>
+                                </a>
+                                <div class="price">
+                                    <del>95,000원</del>
+                                    <em>82,000원</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product_head">
+                                <a href="#" class="p_img"><img src="./img/sale_p10.png" alt="칼리바우트 밀크 초콜릿 10kg"></a>
+                                <span>1봉</span>
+                            </div>
+                            <div class="product_info">
+                                <a href="#">
+                                    <p><em>칼리바우트 823 밀크 초콜릿 10kg 벌크</em><br>(10kgX1봉)</p>
+                                    <span>균형잡힌 맛의 부드러운 커버춰</span>
+                                </a>
+                                <div class="price">
+                                    <del>360,000원</del>
+                                    <em>310,000원</em>
                                 </div>
                             </div>
                         </li>
@@ -329,14 +776,50 @@
                 <ul id="event_list">
                     <!-- 이벤트 상품 반복 -->
                     <li>
-                        <a href="#"><img src="./img/spcainmage_ss.jpg" alt="소금빵 펄솔트 이벤트"></a>
+                        <a href="#"><img src="./img/event_p01.jpg" alt="소금빵 펄솔트 이벤트"></a>
                         <a href="#" class="event_product">
-                            <p><img src="./img/list_salt.png" alt="소금빵 성형생지"></p>
+                            <p><img src="./img/event_p01_1.png" alt="소금빵 성형생지"></p>
                             <dl>
                                 <dt>[펄솔트증정] 소금빵성형생지 5봉(83gx15개x5봉)</dt>
                                 <dd>
                                     버터의 깊은 고소함이 살아 있는 소금빵 성형생지<br>
                                     <em>90,300원</em>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/event_p02.jpg" alt="앵커버터 세일 이벤트"></a>
+                        <a href="#" class="event_product">
+                            <p><img src="./img/event_p02_1.jpg" alt="앵커버터 454g"></p>
+                            <dl>
+                                <dt>앵커버터 454g (454g x 1개)</dt>
+                                <dd>
+                                    진하고 고급스러운 향과 풍미 가득<br>
+                                    <em>7,900원</em>
+                                </dd>
+                            </dl>
+                        </a>
+                        <a href="#" class="event_product">
+                            <p><img src="./img/event_p02_2.jpg" alt="앵커버터 1박스"></p>
+                            <dl>
+                                <dt>앵커버터 454g 1박스(20개) (454g x 20개)</dt>
+                                <dd>
+                                    진하고 고급스러운 향과 풍미 가득<br>
+                                    <em>149,000원</em>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/event_p03.jpg" alt="신규가입 크로와상 생지 이벤트"></a>
+                        <a href="#" class="event_product">
+                            <p><img src="./img/event_p03_1.jpg" alt="버터크로와상 냉동생지"></p>
+                            <dl>
+                                <dt>[신규회원1000원]버터크로와상 냉동생지 (1봉)</dt>
+                                <dd>
+                                    버터의 깊은 풍미를 담은 크로와상<br>
+                                    <em>1,000원</em>
                                 </dd>
                             </dl>
                         </a>
@@ -355,11 +838,9 @@
                 <div class="y_product">
                     <iframe width="839" height="480" src="https://www.youtube.com/embed/GRKmQllLXh8" title="[얌스토어] 겉바속촉 버터 풍미 그대로 메가 사이즈 시그니처 소금빵" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <a href="#" class="y_product_link">
-                        <div class="y_p_info">
-                            <p>소금빵 성형 생지</p>
-                            <span>겉바속촉 버터 풍미 그대로 메가 사이즈 시그니처 소금빵</span>
-                            <em>24,100원</em>
-                        </div>
+                        <h2>소금빵 성형 생지</h2>
+                        <p>겉바속촉 버터 풍미 그대로 메가 사이즈 시그니처 소금빵</p>
+                        <p class="y_p_price">24,100원</p>
                     </a>
                 </div>
             </section>
@@ -425,10 +906,64 @@
                             </dl>
                         </a>
                         <div class="r_contents">
-                            <span>kong***</span>
+                            <span>rla***</span>
                             <p>오늘 배송와서 맛있게 구워먹었습니다</p>
                             <span><img src="./img/star.png" alt="별점">4.9점</span>
                             <span>리뷰 0개</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/rev_02.jpg" alt=""></a>
+                        <a href="#" class="r_product">
+                            <p><img src="./img/rev_02_p.jpg" alt="사각페스트리"></p>
+                            <dl>
+                                <dt>사각페스트리</dt>
+                                <dd>
+                                    <em>11,800원</em>
+                                </dd>
+                            </dl>
+                        </a>
+                        <div class="r_contents">
+                            <span>김***</span>
+                            <p>편리해요</p>
+                            <span><img src="./img/star.png" alt="별점">5.0점</span>
+                            <span>리뷰 1개</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/rev_03.jpg" alt="반미바게뜨"></a>
+                        <a href="#" class="r_product">
+                            <p><img src="./img/rev_03_p.png" alt="반미바게뜨"></p>
+                            <dl>
+                                <dt>반미바게뜨</dt>
+                                <dd>
+                                    <em>8,000원</em>
+                                </dd>
+                            </dl>
+                        </a>
+                        <div class="r_contents">
+                            <span>jee2***</span>
+                            <p>바삭바삭해요 대신 만들고 빨리먹어야해요</p>
+                            <span><img src="./img/star.png" alt="별점">5.0점</span>
+                            <span>리뷰 0개</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/rev_04.jpg" alt="냉동생지"></a>
+                        <a href="#" class="r_product">
+                            <p><img src="./img/rev_04_p.jpg" alt="냉동생지"></p>
+                            <dl>
+                                <dt>[신규 사업자 전용 9900원] 냉동생지 체험 KIT (평일 주문가능)</dt>
+                                <dd>
+                                    <em>100,000원</em>
+                                </dd>
+                            </dl>
+                        </a>
+                        <div class="r_contents">
+                            <span>kims***</span>
+                            <p>모카소금빵으로 판매중</p>
+                            <span><img src="./img/star.png" alt="별점">5.0점</span>
+                            <span>리뷰 5개</span>
                         </div>
                     </li>
                 </ul>
@@ -460,7 +995,7 @@
             </section>
         </main>
         <footer>
-            <ul id="link_list">
+            <ul class="link_list">
                 <li><img src="./img/f_yaam.png" alt=""><em>베이커리 카페 사업자 필수 앱</em></li>
                 <li><img src="./img/f_gg.png" alt="구글 플레이 링크"></li>
                 <li><img src="./img/f_app.png" alt="앱스토어 링크"></li>
