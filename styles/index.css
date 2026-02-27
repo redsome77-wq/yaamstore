@@ -1,39 +1,5 @@
-body {}
-.tie_bnr {}
-.tie_bnr > a {}
-.tie_bnr .class {}
-.tie_bnr .class img {}
-#wrap header {}
-#wrap header .h_top {}
-#wrap header .h_top h1 {}
-#wrap header .h_top h1 a {}
-#wrap header .h_top h1 a img {}
-#wrap header .h_top #searching_box {}
-#wrap header .h_top #searching_box #search {}
-#wrap header .h_top #searching_box #search_icon {}
-#wrap header .h_top #searching_box #search_icon img {}
-#wrap header .h_top #lnb {}
-#wrap header .h_btm {}
-#wrap header .h_btm .whole_cate {}
-#wrap header .h_btm .whole_cate > a {}
-#wrap header .h_btm .whole_cate > a img {}
-#wrap header .h_btm .whole_cate > a span {}
-#wrap header .h_btm .whole_cate .w_cate_page {}
-#wrap header .h_btm .whole_cate .w_cate_page .depth_01 {}
-#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li {}
-#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a {}
-#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a .depth_02 {}
-#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a .depth_02 li {}
-#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a .depth_02 li a {}
-#wrap header .h_btm nav {}
-#wrap header .h_btm nav #gnb {}
-#wrap header .h_btm nav #gnb a {}
-#wrap header .h_btm .h_guide {}
-#wrap header .h_btm .h_guide .seller_page {}
-#wrap header .h_btm .h_guide .seller_page img {}
-#wrap header .h_btm .h_guide .delivery_guide {}
-#wrap header .h_btm .h_guide .delivery_guide img {}
 #wrap main {}
+/* 히어로배너 =========================================================== */
 #wrap main .hero_bnr {}
 #wrap main .hero_bnr .bnr_img {}
 #wrap main .hero_bnr .bnr_img a {}
@@ -45,11 +11,14 @@ body {}
 #wrap main .hero_bnr .bnr_pagelist {}
 #wrap main .hero_bnr .bnr_pagelist a {}
 #wrap main .hero_bnr .bnr_pagelist .active {}
+/* 배너 밑 카테고리 =========================================================== */
 #wrap main .category_menu {}
 #wrap main .category_menu a {}
+/* 상품메뉴 =========================================================== */
 #wrap main .selling_product {}
 #wrap main .selling_product .main_item {}
 #wrap main .selling_product .main_item img {}
+/* 1. 베스트 =========================================================== */
 #wrap main #best_product {}
 #wrap main #best_product .title {}
 #wrap main #best_product .title .title_info {}
@@ -63,6 +32,7 @@ body {}
 #wrap main #best_product .contents .prev_btn img {}
 #wrap main #best_product .contents .next_btn {}
 #wrap main #best_product .contents .next_btn img {}
+/* 2. 이달의 특가 =========================================================== */
 #wrap main #month_price {}
 #wrap main #month_price .m_txt {}
 #wrap main #month_price .m_txt .title_info {}
@@ -81,6 +51,7 @@ body {}
 #wrap main #month_price .m_product .m_p_txt .dis_price em {}
 #wrap main #month_price .m_product .m_p_txt .dis_price span {}
 #wrap main #month_price .m_product .m_p_txt .dis_price del {}
+/* 3. 신상품 =========================================================== */
 #wrap main #new_product {}
 #wrap main #new_product .title {}
 #wrap main #new_product .title .title_info {}
@@ -112,6 +83,7 @@ body {}
 #wrap main #new_product .contents .prev_btn img {}
 #wrap main #new_product .contents .next_btn {}
 #wrap main #new_product .contents .next_btn img {}
+/* 4. 할인제품 =========================================================== */
 #wrap main #sale_product {}
 #wrap main #sale_product .title {}
 #wrap main #sale_product .title .title_info {}
@@ -139,6 +111,7 @@ body {}
 #wrap main #sale_product .contents .prev_btn img {}
 #wrap main #sale_product .contents .next_btn {}
 #wrap main #sale_product .contents .next_btn img {}
+/* 5. 진행 이벤트 =========================================================== */
 #wrap main #event {}
 #wrap main #event .title {}
 #wrap main #event .title .title_info {}
@@ -158,8 +131,10 @@ body {}
 #wrap main #event #event_list li .event_product dl dt {}
 #wrap main #event #event_list li .event_product dl dd {}
 #wrap main #event #event_list li .event_product dl dd em {}
+/* 6. 멤버스 배너 =========================================================== */
 #wrap main .members {}
 #wrap main .members img {}
+/* 7. (유튜브) 시그니처 소금빵 성형생지 =========================================================== */
 #wrap main #yaam_youtube {}
 #wrap main #yaam_youtube .y_txt {}
 #wrap main #yaam_youtube .y_txt .title_info {}
@@ -173,6 +148,7 @@ body {}
 #wrap main #yaam_youtube .y_product y_product_link h2 {}
 #wrap main #yaam_youtube .y_product y_product_link p {}
 #wrap main #yaam_youtube .y_product y_product_link .y_p_price {}
+/* 8. 사업자전용 무료 pop =========================================================== */
 #wrap main #free_pop {}
 #wrap main #free_pop .title {}
 #wrap main #free_pop .title .title_info {}
@@ -188,6 +164,7 @@ body {}
 #wrap main #free_pop .prev_btn img {}
 #wrap main #free_pop .next_btn {}
 #wrap main #free_pop .next_btn img {}
+/* 9. sns 대란템 =========================================================== */
 #wrap main #sns_item {}
 #wrap main #sns_item .title {}
 #wrap main #sns_item .title .title_info {}
@@ -198,8 +175,10 @@ body {}
 #wrap main #sns_item .item_list {}
 #wrap main #sns_item .item_list a {}
 #wrap main #sns_item .item_list a img {}
+/* 10. 커뮤니티 게시판 배너 =========================================================== */
 #wrap main .community_event {}
 #wrap main .community_event img {}
+/* 11. 얌스토어 리얼리뷰 =========================================================== */
 #wrap main #review {}
 #wrap main #review {}
 #wrap main #review .title {}
@@ -208,6 +187,7 @@ body {}
 #wrap main #review .title .title_info p {}
 #wrap main #review .title .more_btn {}
 #wrap main #review .title .more_btn img {}
+/* 12. 레시피 =========================================================== */
 #wrap main #recipe #review_list {}
 #wrap main #recipe #review_list li {}
 #wrap main #recipe #review_list li .r_img {}
@@ -223,26 +203,3 @@ body {}
 #wrap main #recipe #review_list li .r_contents span {}
 #wrap main #recipe #review_list li .r_contents span img {}
 #wrap main #recipe #review_list li .r_contents p {}
-#wrap footer {}
-#wrap footer .link_list {}
-#wrap footer .link_list li {}
-#wrap footer .link_list li img {}
-#wrap footer .link_list li em {}
-#wrap footer .link_list li a {}
-#wrap footer #gray_zone {}
-#wrap footer #gray_zone .f_txt {}
-#wrap footer #gray_zone .f_txt .info {}
-#wrap footer #gray_zone .f_txt a {}
-#wrap footer #gray_zone .f_txt a img {}
-#wrap footer #gray_zone .f_txt address {}
-#wrap footer #gray_zone .f_guide_01 {}
-#wrap footer #gray_zone .f_guide_01 dt {}
-#wrap footer #gray_zone .f_guide_01 dt a {}
-#wrap footer #gray_zone .f_guide_01 dt a img {}
-#wrap footer #gray_zone .f_guide_01 dt a em {}
-#wrap footer #gray_zone .f_guide_01 dd {}
-#wrap footer #gray_zone .f_guide_02 {}
-#wrap footer #gray_zone .f_guide_02 dt a {}
-#wrap footer #gray_zone .f_guide_02 dt a img {}
-#wrap footer #gray_zone .f_guide_02 dt a em {}
-#wrap footer #gray_zone .f_guide_02 dd {}

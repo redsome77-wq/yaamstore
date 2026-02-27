@@ -1,0 +1,149 @@
+body {}
+/* 띠배너 =============================== */
+.tie_bnr {
+    display: flex; flex-flow: row nowrap;
+    position:relative;
+}
+.tie_bnr a {
+    width: 100%;
+    background-color: #5a1e78;
+    color: #fff;
+    height: 38px;
+    font-size: 1.13rem;
+    display: flex; flex-flow: row nowrap;
+    align-items: center; justify-content: center;
+}
+.tie_bnr .close_btn {
+    width:38px ; height: 38px;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+.tie_bnr .close_btn img {
+    width: 20px; height: 20px;
+}
+/* 로고~검색창~lnb (헤더 상단) =============================== */
+#wrap header {
+    width: 1350px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+#wrap header .h_top {
+    display: flex; flex-flow: row nowrap;
+    justify-content:space-between; align-items: center;
+    padding-bottom: 40px;
+}
+#wrap header .h_top h1 {}
+#wrap header .h_top h1 a {}
+#wrap header .h_top h1 a img {}
+#wrap header .h_top #searching_box {
+    border: #5a1e78 1px solid;
+    border-radius: 50px;
+    min-width: 359px; height: 36px;
+    margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content:right; align-items: center;
+    padding-right: 20px;
+}
+#wrap header .h_top #searching_box #search {
+    text-align: left;
+    font-size: 0.88rem;
+}
+#wrap header .h_top #searching_box #search_icon {}
+#wrap header .h_top #searching_box #search_icon img {
+    width: 30px; height: 30px;
+}
+#wrap header .h_top #lnb {
+
+}
+#wrap header .h_top #lnb a {
+    font-size: 0.88rem;
+    margin-right: 20px;
+}
+#wrap header .h_top #lnb a:last-child {
+    margin-right: 0px;
+}
+/* 카테고리 (헤더 하단) =============================== */
+#wrap header .h_btm {
+    display: flex; flex-flow: row nowrap;
+    justify-content:space-between; align-items: center;
+    position: relative;
+}
+#wrap header .h_btm .whole_cate {}
+#wrap header .h_btm .whole_cate > a {}
+#wrap header .h_btm .whole_cate > a img {
+    margin-right: 10px;
+}
+#wrap header .h_btm .whole_cate > a span {
+    font-size: 1.13rem;
+}
+#wrap header .h_btm .whole_cate .w_cate_page {
+    display: none;
+}
+#wrap header .h_btm .whole_cate .w_cate_page .depth_01 {}
+#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li {}
+#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a {}
+#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a .depth_02 {}
+#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a .depth_02 li {}
+#wrap header .h_btm .whole_cate .w_cate_page .depth_01 > li > a .depth_02 li a {}
+/* 카테고리 외 gnb (헤더 하단) =============================== */
+#wrap header .h_btm nav {
+    position: absolute;
+}
+#wrap header .h_btm nav #gnb {
+}
+#wrap header .h_btm nav #gnb a {
+    font-size: 1.13rem;
+    margin-right: 80px;
+}
+#wrap header .h_btm .h_guide {}
+#wrap header .h_btm .h_guide .seller_page {}
+#wrap header .h_btm .h_guide .seller_page img {}
+#wrap header .h_btm .h_guide .delivery_guide {}
+#wrap header .h_btm .h_guide .delivery_guide img {}
+/* footer (링크리스트) =============================== */
+#wrap footer {
+}
+#wrap footer .link_list {
+    background-color: #f5f5f5;
+}
+#wrap footer .link_list li {}
+#wrap footer .link_list li img {}
+#wrap footer .link_list li em {}
+#wrap footer .link_list li a {}
+/* footer (최하단 회색존) =============================== */
+#wrap footer #gray_zone {
+    background-color: #888;
+}
+#wrap footer #gray_zone .f_txt {}
+#wrap footer #gray_zone .f_txt .info {}
+#wrap footer #gray_zone .f_txt a {
+    color: #fff;
+}
+#wrap footer #gray_zone .f_txt a img {}
+#wrap footer #gray_zone .f_txt address {
+    color: #fff;
+}
+#wrap footer #gray_zone .f_guide_01 {
+}
+#wrap footer #gray_zone .f_guide_01 dt {}
+#wrap footer #gray_zone .f_guide_01 dt a {}
+#wrap footer #gray_zone .f_guide_01 dt a img {}
+#wrap footer #gray_zone .f_guide_01 dt a em {
+    color: #fff;
+}
+#wrap footer #gray_zone .f_guide_01 dd {
+    color: #fff;
+}
+#wrap footer #gray_zone .f_guide_02 {}
+#wrap footer #gray_zone .f_guide_02 dt a {}
+#wrap footer #gray_zone .f_guide_02 dt a img {}
+#wrap footer #gray_zone .f_guide_02 dt a em {
+    color: #fff;
+}
+#wrap footer #gray_zone .f_guide_02 dt a .center_nvr {
+}
+#wrap footer #gray_zone .f_guide_02 dd {
+    color: #fff;
+
+}
