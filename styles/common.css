@@ -107,6 +107,88 @@ body {}
     margin-left: 5px;
 }
 #wrap header .h_btm nav .h_guide .delivery_guide img {}
+/* main (각섹션, 타이틀, h1+p, 더보기버튼) =============================== */
+#wrap main section {
+    width: 1350px;
+    margin: 0 auto;
+}
+#wrap main section .title {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items:flex-start;
+    margin-bottom: 30px;
+}
+#wrap main section .title .title_info {}
+#wrap main section .title .title_info h1 {
+    font-size: 2.19rem;
+    margin-bottom: 17px;
+}
+#wrap main section .title .title_info p {
+    font-size: 1.06rem;
+    font-weight:200;
+    color: #505050;
+}
+#wrap main section .title .more_btn {}
+#wrap main section .title .more_btn img {}
+/* main (섹션별 콘테이너) =============================== */
+#wrap main section .contents {}
+#wrap main section .contents .container {
+    display: flex; flex-flow: row nowrap;
+    overflow: hidden;
+}
+#wrap main section .contents .container li {
+    padding-right:14px;
+}
+#wrap main section .contents .container li .product_head {}
+#wrap main section .contents .container li .product_head .p_img {
+}
+#wrap main section .contents .container li .product_head .p_img img {
+    width: 253px;
+}
+#wrap main section .contents .container li .product_head .pp_point {}
+#wrap main section .contents .container li .product_head p {
+    color: #5a1e78;
+}
+#wrap main section .contents .container li .product_head p span {
+    color: #5a1e78;
+    font-size:1.56rem; font-weight:700;
+}
+#wrap main section .contents .container li .product_info {}
+#wrap main section .contents .container li .product_info a {}
+#wrap main section .contents .container li .product_info a p {
+    margin-bottom: 5px;
+    color: #4a4a4a;
+}
+#wrap main section .contents .container li .product_info a p em {
+    font-size:1.25rem; font-weight:700; line-height: 1.5;
+    color: #4a4a4a;
+}
+#wrap main section .contents .container li .product_info a span {
+    font-size:0.75rem; font-weight:300; line-height: 1.1;
+    color: #888;
+}
+#wrap main section .contents .container li .product_info .price {
+    display: flex; flex-flow: column nowrap;
+    justify-content: flex-start; align-items: flex-start;
+    padding-top: 5px;
+}
+#wrap main section .contents .container li .product_info .price del {
+    font-size:1.06rem; font-weight:300; line-height: 1.1;
+    color: #888;
+}
+#wrap main section .contents .container li .product_info .price em {
+    font-size:1.19rem; font-weight:700; line-height: 1.1;
+    color: #6b6b6b;
+    padding-top: 5px;
+}
+/* main (섹션별 콘테이너 좌우버튼) =============================== */
+#wrap main section .contents .prev_btn {}
+#wrap main section .contents .prev_btn img {
+    width: 30px; height: 50px;
+}
+#wrap main section .contents .next_btn {}
+#wrap main section .contents .next_btn img {
+    width: 30px; height: 50px;
+}
 /* footer (링크리스트) =============================== */
 #wrap footer {
 }

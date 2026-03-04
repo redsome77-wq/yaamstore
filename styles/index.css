@@ -15,12 +15,16 @@
     position: absolute;
     left:50px; top:44%;
 }
-#wrap main .hero_bnr .prev img {}
+#wrap main .hero_bnr .prev img {
+    width: 30px; height: 50px;
+}
 #wrap main .hero_bnr .next {
     position: absolute;
     right:50px; top:44%;
 }
-#wrap main .hero_bnr .next img {}
+#wrap main .hero_bnr .next img {
+    width: 30px; height: 50px;
+}
 #wrap main .hero_bnr .bnr_pagelist {}
 #wrap main .hero_bnr .bnr_pagelist a {
     background-color: aqua;
@@ -32,15 +36,38 @@
     background-color: #f1f1f1;
     height: 72px;
     text-align: center;
+    display: flex; flex-flow: row nowrap;
+    justify-content:center; align-items: center;
 }
 #wrap main .category_menu a {
-    font-size: 1.25rem;
-    font-weight:600;
+    height: 19px;
+    margin-right: 50px;
 }
+#wrap main .category_menu a:last-child {margin-right: 0px;}
+#wrap main .category_menu span {
+    margin-right: 50px;
+    font-weight: 100;
+}
+#wrap main .category_menu a img {}
 /* 상품메뉴 =========================================================== */
-#wrap main .selling_product {}
-#wrap main .selling_product .main_item {}
-#wrap main .selling_product .main_item img {}
+#wrap main .selling_product {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    padding: 82px 0;
+}
+#wrap main .selling_product .main_item {
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+    font-size: 1.06rem; font-weight: 300;
+    margin-right: 65px;
+}
+#wrap main .selling_product .main_item:last-child {
+    margin-right: 0px;
+}
+#wrap main .selling_product .main_item img {
+    width: 82px;
+    margin-bottom: 20px;
+}
 /* 1. 베스트 =========================================================== */
 #wrap main #best_product {}
 #wrap main #best_product .title {}
@@ -51,29 +78,83 @@
 #wrap main #best_product .title .more_btn img {}
 #wrap main #best_product .contents {}
 #wrap main #best_product .contents .container {}
+#wrap main #best_product .contents .container li {}
+#wrap main #best_product .contents .container li .product_head {}
+#wrap main #best_product .contents .container li .product_head .p_img {}
+#wrap main #best_product .contents .container li .product_head .p_img img {}
+#wrap main #best_product .contents .container li .product_head .pp_point {}
+#wrap main #best_product .contents .container li .product_head span {}
+#wrap main #best_product .contents .container li .product_info {}
+#wrap main #best_product .contents .container li .product_info a {}
+#wrap main #best_product .contents .container li .product_info a p {}
+#wrap main #best_product .contents .container li .product_info a p em {}
+#wrap main #best_product .contents .container li .product_info a span {}
+#wrap main #best_product .contents .container li .product_info .price {}
+#wrap main #best_product .contents .container li .product_info .price del {}
+#wrap main #best_product .contents .container li .product_info .price em {}
 #wrap main #best_product .contents .prev_btn {}
 #wrap main #best_product .contents .prev_btn img {}
 #wrap main #best_product .contents .next_btn {}
 #wrap main #best_product .contents .next_btn img {}
 /* 2. 이달의 특가 =========================================================== */
-#wrap main #month_price {}
-#wrap main #month_price .m_txt {}
-#wrap main #month_price .m_txt .title_info {}
-#wrap main #month_price .m_txt .title_info h1 {}
-#wrap main #month_price .m_txt .title_info p {}
-#wrap main #month_price .m_txt .count_clock {}
-#wrap main #month_price .m_txt .count_clock img {}
-#wrap main #month_price .m_txt .count_clock .clock {}
+#wrap main #month_price {
+    padding: 154px 0;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#wrap main #month_price .title {
+    display:block;
+}
+#wrap main #month_price .title .title_info {
+    margin-bottom: 60px;
+}
+#wrap main #month_price .title .title_info h1 {}
+#wrap main #month_price .title .title_info p {}
+#wrap main #month_price .title .count_clock {
+}
+#wrap main #month_price .title .count_clock img {
+    width: 32px;
+}
+#wrap main #month_price .title .count_clock .clock {
+    font-size: 2.31rem; font-weight:700;
+}
 #wrap main #month_price .m_product {}
-#wrap main #month_price .m_product .m_p_img {}
-#wrap main #month_price .m_product .m_p_img img {}
+#wrap main #month_price .m_product .m_p_img {
+}
+#wrap main #month_price .m_product .m_p_img img {
+    width: 869px; height: 489px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
 #wrap main #month_price .m_product .m_p_txt {}
-#wrap main #month_price .m_product .m_p_txt h2 {}
-#wrap main #month_price .m_product .m_p_txt p {}
-#wrap main #month_price .m_product .m_p_txt .dis_price {}
-#wrap main #month_price .m_product .m_p_txt .dis_price em {}
-#wrap main #month_price .m_product .m_p_txt .dis_price span {}
-#wrap main #month_price .m_product .m_p_txt .dis_price del {}
+#wrap main #month_price .m_product .m_p_txt > * {
+    margin-bottom: 20px;
+}
+#wrap main #month_price .m_product .m_p_txt h2 {
+    font-size: 1.50rem; font-weight: 500; line-height: 1.2;
+}
+#wrap main #month_price .m_product .m_p_txt p {
+    font-size: 1.0rem; font-weight:300;
+    color: #6b6b6b;
+}
+#wrap main #month_price .m_product .m_p_txt .dis_price {
+    margin-bottom: 0px;
+}
+#wrap main #month_price .m_product .m_p_txt .dis_price > * {
+    margin-right: 5px;
+}
+#wrap main #month_price .m_product .m_p_txt .dis_price em {
+    font-size: 1.81rem; font-weight:700;
+    color: #5a1e78;
+}
+#wrap main #month_price .m_product .m_p_txt .dis_price span {
+    font-size: 1.81rem; font-weight:700;
+    color: #6b6b6b;
+}
+#wrap main #month_price .m_product .m_p_txt .dis_price del {
+    font-size: 1.38rem; font-weight:700;
+    color: #b0b0b0;
+}
 /* 3. 신상품 =========================================================== */
 #wrap main #new_product {}
 #wrap main #new_product .title {}
@@ -142,14 +223,21 @@
 #wrap main #event .title .title_info p {}
 #wrap main #event .title .more_btn {}
 #wrap main #event .title .more_btn img {}
-#wrap main #event #event_list {}
-#wrap main #event #event_list li {}
+#wrap main #event #event_list {
+    display: flex; flex-flow: row nowrap;
+    justify-content:space-between;
+}
 #wrap main #event #event_list li {}
 #wrap main #event #event_list li .event_img {}
-#wrap main #event #event_list li .event_img img {}
+#wrap main #event #event_list li .event_img img {
+    width: 440px; height: 440px;
+    border-radius: 35px;
+}
 #wrap main #event #event_list li .event_product {}
 #wrap main #event #event_list li .event_product p {}
-#wrap main #event #event_list li .event_product p img {}
+#wrap main #event #event_list li .event_product p img {
+    width: 74px; height: 74px;
+}
 #wrap main #event #event_list li .event_product dl {}
 #wrap main #event #event_list li .event_product dl dt {}
 #wrap main #event #event_list li .event_product dl dd {}
@@ -159,12 +247,12 @@
 #wrap main .members img {}
 /* 7. (유튜브) 시그니처 소금빵 성형생지 =========================================================== */
 #wrap main #yaam_youtube {}
-#wrap main #yaam_youtube .y_txt {}
-#wrap main #yaam_youtube .y_txt .title_info {}
-#wrap main #yaam_youtube .y_txt .title_info h1 {}
-#wrap main #yaam_youtube .y_txt .title_info p {}
-#wrap main #yaam_youtube .y_txt .product_btn {}
-#wrap main #yaam_youtube .y_txt .product_btn img {}
+#wrap main #yaam_youtube .title {}
+#wrap main #yaam_youtube .title .title_info {}
+#wrap main #yaam_youtube .title .title_info h1 {}
+#wrap main #yaam_youtube .title .title_info p {}
+#wrap main #yaam_youtube .title .product_btn {}
+#wrap main #yaam_youtube .title .product_btn img {}
 #wrap main #yaam_youtube .y_product {}
 #wrap main #yaam_youtube .y_product iframe {}
 #wrap main #yaam_youtube .y_product y_product_link {}
