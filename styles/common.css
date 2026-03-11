@@ -24,7 +24,7 @@ body {}
 }
 /* 로고~검색창~lnb (헤더 상단) =============================== */
 #wrap header {
-    width: 1350px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -33,25 +33,33 @@ body {}
     justify-content:space-between; align-items: center;
     padding-bottom: 40px;
 }
-#wrap header .h_top h1 {}
+#wrap header .h_top h1 {
+    width: 193px;
+}
 #wrap header .h_top h1 a {}
-#wrap header .h_top h1 a img {}
+#wrap header .h_top h1 a img {
+    width: 100%;
+}
 #wrap header .h_top #searching_box {
     border: #5a1e78 1px solid;
     border-radius: 50px;
     min-width: 359px; height: 36px;
     margin: 0 auto;
     display: flex; flex-flow: row nowrap;
-    justify-content:right; align-items: center;
-    padding-right: 20px;
+    justify-content:left; align-items: center;
 }
 #wrap header .h_top #searching_box #search {
-    text-align: left;
+    text-align: center;
     font-size: 0.88rem;
+    transform: translateX(5%);
+    width: 359px;
 }
-#wrap header .h_top #searching_box #search_icon {}
-#wrap header .h_top #searching_box #search_icon img {
+#wrap header .h_top #searching_box #search_icon {
     width: 30px; height: 30px;
+    position: relative; right: 15px;
+}
+#wrap header .h_top #searching_box #search_icon img {
+    width: 100%;
 }
 #wrap header .h_top #lnb {
 
@@ -69,11 +77,11 @@ body {}
     justify-content:space-between; align-items: center;
 }
 #wrap header .h_btm .whole_cate {}
-#wrap header .h_btm .whole_cate > a {}
-#wrap header .h_btm .whole_cate > a img {
+#wrap header .h_btm .whole_cate #cate_block {}
+#wrap header .h_btm .whole_cate #cate_block img {
     margin-right: 10px;
 }
-#wrap header .h_btm .whole_cate > a span {
+#wrap header .h_btm .whole_cate #cate_block span {
     font-size: 1.13rem;
     font-weight: 300;
 }
@@ -111,6 +119,7 @@ body {}
 #wrap main section {
     width: 1350px;
     margin: 0 auto;
+    margin-bottom: 110px;
 }
 #wrap main section .title {
     display: flex; flex-flow: row nowrap;
@@ -217,72 +226,96 @@ body {}
 }
 #wrap footer .link_list li a {}
 /* footer (최하단 회색존) =============================== */
-#wrap footer #gray_zone {
+#wrap footer #gray_zone_bg {
     background-color: #888;
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-around; align-items: center;
     padding: 40px 0;
+    width: 100%;
 }
-#wrap footer #gray_zone .f_txt {}
-#wrap footer #gray_zone .f_txt .info {
+#wrap footer #gray_zone_bg #gray_zone {
+    max-width: 1650px;
+    margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content:space-between; align-items: center;
+}
+#wrap footer #gray_zone .f_wh_bar {
+    background-color: #fff;
+    width: 1px; height: 200px;
+}
+#wrap footer #gray_zone_bg #gray_zone .f_txt {}
+#wrap footer #gray_zone_bg #gray_zone .f_txt .info {
     font-size: 0.75rem;
 }
-#wrap footer #gray_zone .f_txt a {
+#wrap footer  #gray_zone_bg #gray_zone .f_txt a {
     color: #fff; margin-right: 25px;
 }
-#wrap footer #gray_zone .f_txt a img {
+#wrap footer  #gray_zone_bg #gray_zone .f_txt a img {
     padding: 40px 0;
 }
-#wrap footer #gray_zone .f_txt address {
+#wrap footer  #gray_zone_bg #gray_zone .f_txt address {
     color: #b2b2b2;
     font-size: 0.94rem;
     line-height: 1.6;
 }
-#wrap footer #gray_zone .f_txt address span {
+#wrap footer  #gray_zone_bg #gray_zone .f_txt address span {
     color: #474747;
 }
-#wrap footer #gray_zone .f_txt address em {
+#wrap footer  #gray_zone_bg #gray_zone .f_txt address em {
     color: #b2b2b2;
     font-weight:700; 
 }
-#wrap footer #gray_zone .f_guide_01 {
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_01 {}
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_01,
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_02 {
     display: flex; flex-flow: column nowrap;
-    align-items: end;
+    justify-content: left;
+    align-items:flex-start;
 }
-#wrap footer #gray_zone .f_guide_01 dt {}
-#wrap footer #gray_zone .f_guide_01 dt a {
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_01 dt {}
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_01 dd:nth-child(2),
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_02 dd:nth-child(2) {
+    margin-bottom: 72px;
+}
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_01 dt a,
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_02 dt a {
     display: flex; flex-flow: row nowrap;
     align-items: center;
+}
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_01 dt:first-child a img,
+#wrap footer  #gray_zone_bg #gray_zone .f_guide_02 dt:first-child a img {
+    padding-top: 7px;
+}
+#wrap footer #gray_zone .f_guide_01 dt a img,
+#wrap footer #gray_zone .f_guide_02 dt a img {
+    margin-right: 10px;
 }
 #wrap footer #gray_zone .f_guide_01 dt a img {
     height: 38px;
 }
-#wrap footer #gray_zone .f_guide_01 dt a em {
+#wrap footer #gray_zone .f_guide_01 dt a em,
+#wrap footer #gray_zone .f_guide_02 dt a em {
     color: #fff;
-    font-size: 1.81rem; font-weight: 800;
+    font-size: 1.81rem; font-weight: 800; line-height: 1.5;
 }
-#wrap footer #gray_zone .f_guide_01 dd {
+#wrap footer #gray_zone .f_guide_01 dd {}
+#wrap footer #gray_zone .f_guide_01 dd,
+#wrap footer #gray_zone .f_guide_02 dd {
     color: #fff;
-    font-size: 0.88rem; font-weight:200;
+    font-size: 0.88rem; font-weight:200; line-height: 1.5;
+    padding-left: 50px;
 }
-#wrap footer #gray_zone .f_guide_02 {
-    display: flex; flex-flow: column nowrap;
-    align-items: end;
-}
-#wrap footer #gray_zone .f_guide_02 dt a {
+#wrap footer #gray_zone .f_guide_02 {}
+#wrap footer #gray_zone .f_guide_02 dt {}
+#wrap footer #gray_zone .f_guide_02 dt a {}
+#wrap footer #gray_zone .f_guide_02 dt a:first-child {
     display: flex; flex-flow: row nowrap;
-    align-items: center;
+    align-items: end;
 }
 #wrap footer #gray_zone .f_guide_02 dt a img {
     width: 34px;
 }
-#wrap footer #gray_zone .f_guide_02 dt a em {
-    color: #fff;
-    font-size: 1.81rem; font-weight: 800;
-}
+#wrap footer #gray_zone .f_guide_02 dt a em {}
 #wrap footer #gray_zone .f_guide_02 dt a .center_nvr {
+    font-size: 1.0rem; line-height: 1.5;
+    margin-left: 5px;
 }
-#wrap footer #gray_zone .f_guide_02 dd {
-    color: #fff;
-
-}
+#wrap footer #gray_zone .f_guide_02 dd {}

@@ -1,3 +1,4 @@
+#wrap {}
 #wrap main {}
 /* 히어로배너 =========================================================== */
 #wrap main .hero_bnr {
@@ -42,12 +43,19 @@
 #wrap main .category_menu a {
     height: 19px;
     margin-right: 50px;
+    position:relative;
+}
+#wrap main .category_menu a::after {
+    content: ''; display: block;
+    background-color:#b0b0b0;
+    width: 1px; height: 15px;
+    transform: translateY(-130%); right: -28px;
+    position: absolute;
+}
+#wrap main .category_menu a:last-child::after {
+    display: none;
 }
 #wrap main .category_menu a:last-child {margin-right: 0px;}
-#wrap main .category_menu span {
-    margin-right: 50px;
-    font-weight: 100;
-}
 #wrap main .category_menu a img {}
 /* 상품메뉴 =========================================================== */
 #wrap main .selling_product {
@@ -98,7 +106,6 @@
 #wrap main #best_product .contents .next_btn img {}
 /* 2. 이달의 특가 =========================================================== */
 #wrap main #month_price {
-    padding: 154px 0;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
 }
@@ -246,6 +253,7 @@
 #wrap main #members_bnr {
     background-color: #542a74;
     text-align: center;
+    margin-bottom: 110px;
 }
 #wrap main #members_bnr .members {}
 #wrap main #members_bnr .members img {
@@ -253,7 +261,6 @@
 }
 /* 7. (유튜브) 시그니처 소금빵 성형생지 =========================================================== */
 #wrap main #yaam_youtube {
-    padding: 154px 0;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
 }
@@ -336,6 +343,7 @@
 #wrap main #community {
     background:linear-gradient(90deg, #d5c1f3, #ebceec);
     text-align: center;
+    margin-bottom: 110px;
 }
 #wrap main #community .community_event {
 }
